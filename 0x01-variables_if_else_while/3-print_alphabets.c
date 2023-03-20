@@ -9,13 +9,17 @@
 */
 int main(void)
 {
-for (char c = 'a'; c <= 'z'; c++)
+char c = 'a';
+while (c <= 'z')
 {
 putchar(c);
+c++;
 }
-for (char c = 'A'; c <= 'Z'; c++)
+c = 'A';
+while (c <= 'Z')
 {
 putchar(c);
+c++;
 }
 putchar('\n');
 return (0);
