@@ -7,13 +7,14 @@ int main() {
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     const int charset_len = sizeof(charset) - 1;
     srand(time(NULL));
-    
-    for (int i = 0; i < PASSWORD_LENGTH; i++) {
+    int i;
+
+    for (i = 0; i < PASSWORD_LENGTH; i++) {
         password[i] = charset[rand() % charset_len];
     }
     password[PASSWORD_LENGTH] = '\0';
     
-    for (int i = 0; i < PASSWORD_LENGTH; i++) {
+    for (i = 0; i < PASSWORD_LENGTH; i++) {
         putchar(password[i]);
     }
     putchar('\n');
