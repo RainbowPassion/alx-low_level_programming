@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* str_concat -  returns a pointer to a 2 dimensional array of integers.
+* str_concat -  function that concatenates two strings.
 * @s1: pointer
 * @s2: pointer
 * Return: results
